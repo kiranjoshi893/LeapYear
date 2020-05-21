@@ -1,9 +1,9 @@
 function leapYear(checkYear){
-  if(checkYear % 4 === 0 || checkYear % 100 === 0 || checkYear % 400 ===0){
-    return console.log(checkYear + ' is leap year')
+  if(checkYear % 100 === 0){
+    return console.log(checkYear % 400 === 0)
   }
   else{
-    return console.log(checkYear + ' not is leap year')
+    return console.log(checkYear % 4 === 0)
   }
 }
-leapYear(2024);
+leapYear(100);
